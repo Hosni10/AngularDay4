@@ -1,0 +1,14 @@
+<div>
+    <div class="row row-cols-1 row-cols-md-5 mt-5  g-4">
+        @for (product of allProducts ; track product.id) {
+          <div class="col">
+              <div class="card">
+                <img [src]= "product.image" style="height: 200px; width: 200px;" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title">{{product.title}}</h5>
+                  <p class="card-text">{{product.price|currency:"EUR"}}</p>
+                </div>
+              </div>
+            </div>
+        }
+    </div>
