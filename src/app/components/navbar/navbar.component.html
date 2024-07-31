@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/product">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="/about">About us</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="/contact">Contact us</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="cart">Cart</a>
+        <a class="nav-item nav-link" routerLinkActive="active" routerLink="form" [ngStyle]="{display: isUserLoggedIn ? 'block' : 'none'}">Form</a>
+        <button class="nav-item nav-link" [innerHTML]="isUserLoggedIn ? 'Logout' : 'Login'" (click)="onClick()"></button>
+      </div>
+    </div>
+  </nav>

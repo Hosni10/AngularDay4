@@ -1,0 +1,16 @@
+<p class="bg-info p-5">product-details works!</p>
+<div class="row">
+    <div class="container">
+        <h1 class="text-center">{{ selectedProd.title }}</h1>
+          <div class="col-6 m-auto">
+            <div class="card">
+              <img [src]="selectedProd.image" class="card-img-top" alt="{{ selectedProd.title }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ selectedProd.title }}</h5>
+                <p class="card-text">{{ selectedProd.description }}</p>
+                <p class="card-text"><strong>${{ selectedProd.price }}</strong></p>
+              </div>
+            </div>
+          </div>
+        
+</div>
