@@ -1,0 +1,6 @@
+.loggedOut {
+    cursor: not-allowed;
+    background-color: #eee;
+    color: black;
+    border: none;
+}
